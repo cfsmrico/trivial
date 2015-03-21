@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>Linked Lists</title>
+    <script src="singlyLinkedList.js"></script>
+    <script src="linkedLists1.js"></script>
+</head>
+<body>
+    <p>Who needs a body anyways?</p>
+    <script>
+    var myLinkedList = new LinkedList();
+    myLinkedList.insert(1);
+    myLinkedList.insert(3);
+    myLinkedList.insert(3);
+    myLinkedList.insert(3);
+    myLinkedList.insert(2);
+    myLinkedList.insert(2);
+    myLinkedList.insert(5);
+    myLinkedList.insert(5);
+    myLinkedList.insert(4);
+    myLinkedList.insert(5);
+    myLinkedList.insert(3);
+    myLinkedList.insert(3);
+    myLinkedList.insert(3);
+    myLinkedList.insert(2);
+    myLinkedList.insert(2);
+    myLinkedList.insert(1);
+    console.log("myLinkedList before removing duplicates: " + myLinkedList.contents());
+    removeDuplicates(myLinkedList);
+    console.log("myLinkedList after removing duplicates: " + myLinkedList.contents());
+    </script>
+</body>
+</html>

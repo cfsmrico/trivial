@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <title>Linked Lists</title>
+    <script src="singlyLinkedList.js"></script>
+    <script src="linkedLists4.js"></script>
+</head>
+<body>
+    <p>Who needs a body anyways?</p>
+<script>
+var list1 = new LinkedList();
+var list2 = new LinkedList();
+list1.insert(5);
+list1.insert(1);
+list1.insert(3);
+
+list2.insert(2);
+list2.insert(9);
+list2.insert(5);
+
+var list3 = addLinkedLists(list1, list2);
+console.log("list1: " + list1.contents() + "\nlist2: " + list2.contents() + "\nlist3: " + list3.contents());
+
+list2.insert(4);
+list3 = addLinkedLists(list1, list2);
+console.log("list1: " + list1.contents() + "\nlist2: " + list2.contents() + "\nlist3: " + list3.contents());
+</script>
+</body>
+</html>

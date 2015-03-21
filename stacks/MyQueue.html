@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+    <title>MyQueue</title>
+    <script src="stack.js"></script>
+    <script src="MyQueue.js"></script>
+</head>
+<body>
+    <p>Who needs a body anyways?</p>
+<script>
+    var chaneyQ = new MyQueue();
+    var data = [1, 2, 3, 'a', 'b', "Tammy"];
+
+    for (i = 0; i < 3; ++i) {
+        console.log("enqueue " + data[i]);
+        chaneyQ.enqueue(data[i]);
+    }
+
+    console.log("dequeued: " + chaneyQ.dequeue());
+    console.log("enqueue " + data[3]); chaneyQ.enqueue(data[3]);  
+    console.log("enqueue " + data[4]); chaneyQ.enqueue(data[4]);
+    console.log("dequeued: " + chaneyQ.dequeue());
+    console.log("enqueue " + data[5]); chaneyQ.enqueue(data[5]);
+    
+    while (!chaneyQ.isEmpty()) {
+        console.log("dequeued: " + chaneyQ.dequeue());
+    }
+</script>
+</body>
+</html>
